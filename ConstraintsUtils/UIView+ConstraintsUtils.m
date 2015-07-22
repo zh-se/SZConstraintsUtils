@@ -126,6 +126,16 @@
     return self.frame.origin.y;
 }
 
+-(void)setSz_x:(CGFloat)x {
+    CGRect newFrame = self.frame;
+    newFrame.origin.x = x;
+    self.frame = newFrame;
+}
+
+-(CGFloat)sz_x {
+    return self.frame.origin.x;
+}
+
 @end
 
 

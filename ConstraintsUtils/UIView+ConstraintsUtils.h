@@ -24,6 +24,7 @@
 @property (nonatomic) CGFloat sz_height;
 @property (nonatomic) CGFloat sz_width;
 @property (nonatomic) CGFloat sz_y;
+@property (nonatomic) CGFloat sz_x;
 
 @end
 
