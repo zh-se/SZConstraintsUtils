@@ -76,7 +76,7 @@
 
 - (NSLayoutConstraint *)sz_widthConstraint {
     for (NSLayoutConstraint *layoutConstraint in self.constraints) {
-        if(layoutConstraint.firstAttribute == NSLayoutAttributeWidth) {
+        if([[layoutConstraint class] isEqual:[NSLayoutConstraint class]] && layoutConstraint.firstAttribute == NSLayoutAttributeWidth) {
             return layoutConstraint;
         }
     }
@@ -85,7 +85,7 @@
 
 - (NSLayoutConstraint *)sz_heightConstraint {
     for (NSLayoutConstraint *layoutConstraint in self.constraints) {
-        if(layoutConstraint.firstAttribute == NSLayoutAttributeHeight) {
+        if([[layoutConstraint class] isEqual:[NSLayoutConstraint class]] && layoutConstraint.firstAttribute == NSLayoutAttributeHeight) {
             return layoutConstraint;
         }
     }
