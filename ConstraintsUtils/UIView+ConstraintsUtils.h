@@ -13,6 +13,7 @@
 - (NSLayoutConstraint *)sz_widthConstraint;
 - (NSLayoutConstraint *)sz_heightConstraint;
 - (NSLayoutConstraint *)sz_topConstraint;
+- (NSLayoutConstraint *)sz_topConstraint:(UIView*)toView;
 - (NSLayoutConstraint *)sz_bottomConstraint;
 - (NSLayoutConstraint *)sz_xCenterConstraint;
 - (NSLayoutConstraint *)sz_yCenterConstraint;

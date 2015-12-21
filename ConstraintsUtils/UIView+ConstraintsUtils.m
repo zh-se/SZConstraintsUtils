@@ -40,6 +40,19 @@
     return nil;
 }
 
+- (NSLayoutConstraint *)sz_topConstraint:(UIView*)toView {
+    for (NSLayoutConstraint *layoutConstraint in self.superview.constraints) {
+        if(layoutConstraint.firstItem == self && layoutConstraint.firstAttribute == NSLayoutAttributeTop
+                && layoutConstraint.secondItem == toView) {
+            return layoutConstraint;
+        } else if(layoutConstraint.secondItem == self && layoutConstraint.secondAttribute == NSLayoutAttributeTop
+                && layoutConstraint.secondItem == toView){
+            return layoutConstraint;
+        }
+    }
+    return nil;
+}
+
 - (NSLayoutConstraint *)sz_bottomConstraint {
     for (NSLayoutConstraint *layoutConstraint in self.superview.constraints) {
         if(layoutConstraint.firstItem == self && layoutConstraint.firstAttribute == NSLayoutAttributeBottom) {
