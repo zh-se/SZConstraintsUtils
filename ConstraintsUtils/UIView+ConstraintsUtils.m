@@ -102,6 +102,11 @@
             return layoutConstraint;
         }
     }
+    for (NSLayoutConstraint *layoutConstraint in self.superview.constraints) {
+        if([[layoutConstraint class] isEqual:[NSLayoutConstraint class]] && layoutConstraint.firstAttribute == NSLayoutAttributeHeight && layoutConstraint.firstItem == self) {
+            return layoutConstraint;
+        }
+    }
     return nil;
 }
 
