@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/SZConstraintsUtils"
+  s.homepage     = "http://github.com/zh-se/SZConstraintsUtils"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   s.license      = "MIT"
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.author             = { "sergey.zhdanov" => "zhdanov.s.g@gmail.com" }
   # s.social_media_url   = "http://twitter.com/sergey.zhdanov"
 
-  s.source       = { :git => "http://EXAMPLE/SZConstraintsUtils.git", :tag => "0.0.1" }
+  s.source       = { :git => "http://github.com/zh-se/SZConstraintsUtils.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
